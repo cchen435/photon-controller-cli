@@ -1,0 +1,66 @@
+{
+  "entityId": "2b8ec81b-c296-42ab-81d4-2afd4609f910",
+  "entityKind": "vm",
+  "projectId": "cd753450-0b23-440f-aa90-4553604a694d",
+  "state": "ERROR",
+  "operation": "CREATE_VM",
+  "startedTime": "Jul 28, 2016 1:47:50 PM",
+  "queuedTime": "Jul 28, 2016 1:47:50 PM",
+  "endTime": "Jul 28, 2016 1:47:50 PM",
+  "steps": [
+    {
+      "sequence": 1,
+      "state": "QUEUED",
+      "operation": "CREATE_VM",
+      "queuedTime": "Jul 28, 2016 1:47:50 PM",
+      "warnings": [],
+      "errors": [],
+      "resources": [
+        {
+          "resourceId": "2b8ec81b-c296-42ab-81d4-2afd4609f910",
+          "resourceKind": "vm"
+        },
+        {
+          "resourceId": "af719f51-b0af-4a43-ade9-ba82ce1b595b",
+          "resourceKind": "ephemeral-disk"
+        }
+      ]
+    },
+    {
+      "sequence": 0,
+      "state": "ERROR",
+      "operation": "RESERVE_RESOURCE",
+      "startedTime": "Jul 28, 2016 1:47:50 PM",
+      "queuedTime": "Jul 28, 2016 1:47:50 PM",
+      "endTime": "Jul 28, 2016 1:47:50 PM",
+      "warnings": [
+        {
+          "code": "InvalidEntity",
+          "message": "Specified boot disk capacityGb is not used",
+          "data": {}
+        }
+      ],
+      "errors": [
+        {
+          "code": "InternalError",
+          "message": "Please contact the system administrator about request #96c14231-7c42-44ff-bd92-e7063e52c2c9",
+          "data": {}
+        }
+      ],
+      "resources": [
+        {
+          "resourceId": "2b8ec81b-c296-42ab-81d4-2afd4609f910",
+          "resourceKind": "vm"
+        }
+      ]
+    }
+  ],
+  "documentVersion": 4,
+  "documentEpoch": 0,
+  "documentKind": "com:vmware:photon:controller:cloudstore:xenon:entity:TaskService:State",
+  "documentSelfLink": "/photon/cloudstore/tasks/a8af4add-5acf-493a-8912-48f362f6ee63",
+  "documentUpdateTimeMicros": 1469713670488005,
+  "documentUpdateAction": "PATCH",
+  "documentExpirationTimeMicros": 0,
+  "documentOwner": "94565514-8b9a-434c-a8f7-ae160d06c1b3"
+}
